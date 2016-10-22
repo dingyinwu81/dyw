@@ -1,0 +1,38 @@
+# Site settings
+title: dingyinwu
+owner: dingyinwu
+email: dingyinwu81@126.com
+description: > # 编程是工作，更是生活。 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dingyinwu81.github.io" # the base hostname & protocol for your site
+github_username: dingyinwu81
+
+
+#upyun source
+static_url: "http://7xoqod.com1.z0.glb.clouddn.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+paginate: 7
+paginate_path: ":num/"
+gems: [jekyll-paginate, pages]
+
+# default Front matter
+defaults:
+  -
+    scope:
+      path: pages
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      copyright: true
+      duoshuo_comment: true
+      release: true

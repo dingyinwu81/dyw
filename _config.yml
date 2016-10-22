@@ -14,7 +14,7 @@ static_url: "http://7xoqod.com1.z0.glb.clouddn.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 paginate: 7
 paginate_path: ":num/"
 gems: [jekyll-paginate, pages]

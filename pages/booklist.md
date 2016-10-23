@@ -37,8 +37,8 @@ var $booklist = {
   ]
 };
 </script>
-<script src="/assets/js/lib/react/react.js"></script>
-<script src="/assets/js/lib/react/JSXTransformer.js"></script>
-<script type="text/jsx" src="/pages/booklist.js"></script>
+<script src="/dyw/assets/js/lib/react/react.js"></script>
+<script src="/dyw/assets/js/lib/react/JSXTransformer.js"></script>
+<script type="text/jsx" src="/dyw/pages/booklist.js"></script>
 
 <div id="main"></div>

@@ -4,7 +4,7 @@ title: Java并发之Executor
 description: Java1.5提供了一个非常高效实用的多线程包：java.util.concurrent, 提供了大量高级工具，可以帮助开发者编写高效、易维护、结构清晰的Java多线程程序，本文讲的是Executor框架。
 permalink: /posts/thread1/
 key: 100002
-labels: [并发]
+labels: [Java并发]
 encoding: UTF-8
 ---
 
@@ -277,7 +277,7 @@ class CallableTest implements Callable<String> {
 
 继续接上面的代码：
 ```
-    @Test   //CompletionService
+    @Test
     public void method3() throws Exception {
 
       CompletionService<String> completionService = new ExecutorCompletionService<String>(executor);

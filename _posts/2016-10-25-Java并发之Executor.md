@@ -279,7 +279,9 @@ class CallableTest implements Callable<String> {
 ```
     @Test   //CompletionService
     public void method3() throws Exception {
+
       CompletionService<String> completionService = new ExecutorCompletionService<String>(executor);
+
       for (int i = 0; i < 100; i++) {
           completionService.submit(call);
       }

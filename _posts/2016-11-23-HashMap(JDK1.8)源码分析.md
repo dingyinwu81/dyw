@@ -109,6 +109,7 @@ final float loadFactor;
 
 数据结构为链表+红黑树
 ![这里写图片描述](http://img.blog.csdn.net/20160926221342740)
+
 ```
 	//Node是单向链表，它实现了Map.Entry接口
 	static class Node<K,V> implements Map.Entry<K,V> {
@@ -178,6 +179,7 @@ final float loadFactor;
 > **4、put和get方法**
 
 HashMap不同于HashTable，可以key和value都可以为空
+
 ```
 	public V put(K key, V value) {
         return putVal(hash(key), key, value, false, true);
@@ -260,6 +262,7 @@ HashMap不同于HashTable，可以key和value都可以为空
 > **5、resize方法**
 
 resize 其实是旧的Node[ ]数组复制到新扩容后的的Node[ ]中
+
 ```
 	final Node<K,V>[] resize() {
         Node<K,V>[] oldTab = table;

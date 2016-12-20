@@ -186,7 +186,7 @@ public interface DatebaseDao {
 
 > **6、datebase1  HTML页面**
 
-thymeleaf中用标签th:text="${...}"或者 th:value="{...}"来接受后台传出来的数据,这样就会展示从后台传过来的text对象。
+thymeleaf中用标签th:text="${  }"或者 th:value="{  }"来接受后台传出来的数据,这样就会展示从后台传过来的text对象。
 
 ```
 <!doctype html>

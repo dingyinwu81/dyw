@@ -18,6 +18,7 @@ encoding: UTF-8
 > **2、gradle文件**
 
 下载相应的jar包
+
 ```
 group 'bingo'
 version '1.0.0'
@@ -72,6 +73,7 @@ task wrapper(type: Wrapper) {
 > **3、BingoApplication启动文件**
 
 整个Springboot项目由此class中的main程序启动，由@SpringBootApplication完成对项目初始化的bean创建。其中mybatis首先需要由mybatis-spring jar中的sqlSessionFactoryBean生成SqlSessionFactory，然后再配置dateSource。最后由@MapperScan注解完成对dao的
+
 ```
 @SpringBootApplication
 @MapperScan("com.blog.sqlmap")
@@ -109,6 +111,7 @@ public class BingoApplication {
 > **4、application.properties配置文件**
 
 配置了关于thymeleaf的配置和postgresql数据库连接dataSource的配置。
+
 ```
 server.session-timeout= -1  
 server.tomcat.uri-encoding = UTF-8
@@ -133,6 +136,7 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 > **5、Controller，server，dao，及sqlmap**
 
 dao层只需要定义一个接口，由BingoApplication中的注解@MapperScan("com.blog.sqlmap")完成dao  bean的创建。
+
 ```
 @RequestMapping("/datebase")
 @Controller
@@ -183,6 +187,7 @@ public interface DatebaseDao {
 > **6、datebase1  HTML页面**
 
 thymeleaf中用标签th:text="${...}"或者 th:value="{...}"来接受后台传出来的数据,这样就会展示从后台传过来的text对象。
+
 ```
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml"
